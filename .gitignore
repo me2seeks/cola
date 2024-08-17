@@ -1,0 +1,17 @@
+# Directories
+.idea/
+.intellij/
+**/gen
+dist/
+vendor/
+data/
+logs/
+# .vscode/
+
+# Files
+*.iml
+.DS_Store
+*.log
+*.exe
+config.toml
+

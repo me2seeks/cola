@@ -1,0 +1,42 @@
+host = "localhost"
+port = 8080
+mode = debug
+
+[jwt]
+signing_key = "your_signing_key"
+expires_time = 3600
+not_before = 0
+issuer = "your_issuer"
+audience = ["audience1", "audience2"]
+
+[redis]
+host = "localhost"
+port = 6379
+password = "your_redis_password"
+DB = 0
+max_retries = 3
+min_retry_backoff = "8ms"
+max_retry_backoff = "512ms"
+dial_timeout = "5s"
+read_timeout = "3s"
+write_timeout = "3s"
+pool_size = 10
+min_idle_conns = 2
+max_conn_age = "30m"
+idle_timeout = "5m"
+idle_check_frequency = "1m"
+
+[mysql]
+host = "localhost"
+port = "3306"
+config = "charset=utf8mb4&parseTime=True&loc=Local"
+dataBase = "your_database"
+username = "your_username"
+password = "your_password"
+prefix = "your_prefix"
+singular = true
+engine = "InnoDB"
+max_idle_conns = 10
+max_open_conns = 100
+log_mode = "info"
+log_zap = true

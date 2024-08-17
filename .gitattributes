@@ -1,0 +1,8 @@
+# 将所有文本文件的行尾符正则化为 LF
+* text=auto
+
+# 自定义 diff 和 merge
+*.md diff=markdown merge=union
+
+# Force the following filetypes to have unix eols, so Windows does not break them
+*.* text eol=lf
