@@ -4,14 +4,12 @@ on:
   push:
     branches: ["main", "dev"]
     paths-ignore:
-      [
-        "README.*",
-        "LICENSE",
-        "assets/**",
-        "docs/**",
-        ".github/**",
-        ".gitignore",
-      ]
+      - "README.*"
+      - "LICENSE"
+      - "assets/**"
+      - "docs/**"
+      - ".github/**"
+      - ".gitignore"
   workflow_dispatch:
 
 jobs:
